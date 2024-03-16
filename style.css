@@ -1,0 +1,94 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #4285f4;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    margin-top: 100px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section h1 {
+    text-align: center;
+}
+section h6{
+    text-align: center;
+}
+.contenaire {
+    padding: 2px;
+}
+
+.inputContenaire {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 90%;
+    padding: 10px 5px;
+    height: 10px;
+    border: 1px solid gainsboro;
+    outline: 0;
+    border-radius: 6px 0 6px 0;
+}
+
+button {
+    width: 10%;
+    font-size: 20px;
+    height: 30px;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 0 6px 6px 0;
+}
+
+.inputContenaire button:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paragraphe {
+    margin: 10px 0;
+    padding: 10px 0;
+    padding-left: 5px;
+    border-radius: 6px;
+    background-color: #4285f4;
+    color: white;
+    word-wrap: break-word;
+    animation: anim 0.5s linear;
+    cursor: pointer;
+}
+
+.paragraphe:last-child {
+    margin-bottom: 5px;
+}
+
+@keyframes anim {
+    from {
+        transform: translateY(50px);
+    }
+}
+
+.paragrapheHover {
+    text-decoration: line-through;
+    background-color: rgb(247, 118, 118);
+    transition: all 0.5s;
+}
+
+@media screen and (max-width:450px) {
+    section {
+        width: 90%;
+    }
+}
